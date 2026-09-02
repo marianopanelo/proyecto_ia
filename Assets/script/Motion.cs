@@ -38,9 +38,9 @@ public class Motion : MonoBehaviour
         switch (currentSterring)
         {
             case SteeringModes.Seek:
-                return Seek();
+                return Seek(_GameObject.transform.position);
             case SteeringModes.Flee:
-                return Flee();
+                return Flee(_GameObject.transform.position);
             case SteeringModes.Arrive:
                 return Arrive();
             case SteeringModes.Pursuit:
@@ -67,7 +67,19 @@ public class Motion : MonoBehaviour
         return desired;
     }
 
-   
+   private Vector3 Seek(Vector3 target)
+    {
+        Vector3 desired = DesiredVector(target);
+        return CalculateSteering(desired);
+    }
+
+    private Vector3 Flee(Vector3 target)
+    {
+        Vector3 desired = DesiredVector(target);
+        return CalculateSteering(-desired);
+    }
+
+
 
 
 
