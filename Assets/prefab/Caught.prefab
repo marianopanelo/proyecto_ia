@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 45d533513f161434d8edfc34d14b3c7a, type: 2}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.2991294
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.8181796
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67,6 +67,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1975025650532206614, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7097072934924403845}
+    - targetCorrespondingSourceObject: {fileID: 1975025650532206614, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 264422065838299325}
   m_SourcePrefab: {fileID: 100100000, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
 --- !u!1 &146620803532565594 stripped
 GameObject:
@@ -94,3 +97,21 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.4209697
   m_Center: {x: -0.02067709, y: 0.99003005, z: 0}
+--- !u!114 &264422065838299325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146620803532565594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27f559c362fac44dbfb95af96695205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Motion
+  _GameObject: {fileID: 0}
+  _MaxSpeed: 5
+  _MaxSterring: 5
+  _SlowingDistance: 3
+  _MinDistance: 0.1
+  currentSterring: 5

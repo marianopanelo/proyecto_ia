@@ -6,7 +6,7 @@ public class Map : MonoBehaviour
 
     [SerializeField] private float width = 30f;
     [SerializeField] private float height = 30f;
-    [SerializeField] private bool drawgizmos = true;
+    [SerializeField] private bool drawgizmos;
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class Map : MonoBehaviour
 
     public Vector3 OutOfMap(Vector3 position)
     {
-        Vector3 newPosition = Vector3.zero;
+        Vector3 newPosition = position;
         if (position.x > width / 2f) newPosition.x = -width / 2f;
         if (position.x < -width / 2f) newPosition.x = width / 2f;
         if (position.z > height / 2f) newPosition.z = -height / 2f;
