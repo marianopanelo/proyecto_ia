@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 45d533513f161434d8edfc34d14b3c7a, type: 2}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.2991294
       objectReference: {fileID: 0}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.12
+      value: -0.000000087418584
       objectReference: {fileID: 0}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.95
+      value: 5.8181796
       objectReference: {fileID: 0}
     - target: {fileID: 1433154615157296888, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1975025650532206614, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_Name
-      value: Caught Variant
+      value: Caught
       objectReference: {fileID: 0}
     - target: {fileID: 1975025650532206614, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
       propertyPath: m_TagString
@@ -63,5 +63,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1975025650532206614, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7097072934924403845}
   m_SourcePrefab: {fileID: 100100000, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
+--- !u!1 &146620803532565594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975025650532206614, guid: 04fee72c765f2ab41bb5f4aa7f888e3c, type: 3}
+  m_PrefabInstance: {fileID: 1828555480536736844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &7097072934924403845
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146620803532565594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.4209697
+  m_Center: {x: -0.02067709, y: 0.99003005, z: 0}
