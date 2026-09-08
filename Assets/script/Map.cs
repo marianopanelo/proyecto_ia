@@ -5,7 +5,7 @@ public class Map : MonoBehaviour
     public static Map instance {  get; private set; }
 
     [SerializeField] private float width = 30f;
-    [SerializeField] private float height = 30f;
+    [SerializeField] private float height = 40f;
     [SerializeField] private bool drawgizmos;
 
     private void Awake()
